@@ -5,7 +5,12 @@ import { SearchToolAC } from '../redux/action';
 function Search(props) {
     const { searchTool } = props;
     return (
-        <input type="search" placeholder="Search by name..." onChange={(e) => searchTool(e.target.value)} />
+        <input
+            type="search"
+            placeholder="Search by name..."
+            className="search-input"
+            onChange={(e) => searchTool(e.target.value)}
+        />
     )
 }
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
+import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 import { SortNameAC } from '../redux/action';
 
 function TableTitle(props) {
@@ -14,7 +15,11 @@ function TableTitle(props) {
 
     return (
         <tr>
-            <th onClick={handleSortByName}>Tool name</th>
+            <th onClick={handleSortByName}>Tool name
+            {direction === 'asc'
+                    ? <MdArrowDropUp />
+                    : <MdArrowDropDown />}
+            </th>
             <th>Used on</th>
             <th>Type</th>
             <th>Status</th>

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
+
+html, body {
+    height: 100%
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding: 100px;
+}
+
+.error-message{
+    text-align: center;
+}
+
+.search-container {
+    margin: auto;
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+
+.search-input {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.table-container {
+    margin: auto;
+    max-width: 700px;
+}
+
+table {
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+table th {
+    padding: 20px 30px 20px 30px;
+    font-style: italic;
+    font-size: 14px;
+    color: #2E8B57;
+}
+
+table td {
+    padding: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+table td:first-child{
+    display: flex;
+    justify-content: start;
+}
+
+table th:first-child{
+    display: flex;
+    justify-content: start;
+    cursor: pointer;
+}
+
+table td:last-child{
+    display: flex;
+    justify-content: center;
+}
+
+tbody .type-cell{
+    color: darkorange
+}
+
+tbody .status-off{
+    text-align: center;
+    background-color: darkgray;
+    color: #fff;
+    width: 55px;
+    border-radius: 10px;
+}
+
+tbody .status-on{
+    text-align: center;
+    background-color: #2E8B57;
+    color: #fff;
+    width: 55px;
+    border-radius: 10px;
+}
+
+tbody tr:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
